@@ -119,7 +119,7 @@ begin
     an(2) <= '1';
     an(3) <= '1';
 	-- other 7SD are kept off
-	seg <= not w_seg_n;
+	seg <= not  w_seg_n;
 	-----------------------------------------------------
 	
 end top_basys3_arch;

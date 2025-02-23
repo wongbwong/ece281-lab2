@@ -68,52 +68,52 @@ sevenseg_decoder_inst : sevenseg_decoder port map (
     begin
     
         wi_Hex  <= x"0"; wait for 10 ns;
-        assert wo_seg_n = "0000001" report "error on x0" severity failure;
+        assert wo_seg_n = "0111111" report "error on x0" severity failure;
         
         wi_Hex  <= x"1"; wait for 10 ns;
-        assert wo_seg_n = "1001111" report "error on x1" severity failure;
+        assert wo_seg_n = "0000110" report "error on x1" severity failure;
         
         wi_Hex  <= x"2"; wait for 10 ns;
-        assert wo_seg_n = "0010010" report "error on x2" severity failure;
+        assert wo_seg_n = "1011011" report "error on x2" severity failure;
         
         wi_Hex  <= x"3"; wait for 10 ns;
-        assert wo_seg_n = "0000110" report "error on x3" severity failure;
+        assert wo_seg_n = "1001111" report "error on x3" severity failure;
         
         wi_Hex  <= x"4"; wait for 10 ns;
-        assert wo_seg_n = "1001100" report "error on x4" severity failure;
+        assert wo_seg_n = "1100110" report "error on x4" severity failure;
         
         wi_Hex  <= x"5"; wait for 10 ns;
-        assert wo_seg_n = "0100100" report "error on x5" severity failure;
+        assert wo_seg_n = "1101101" report "error on x5" severity failure;
         
         wi_Hex  <= x"6"; wait for 10 ns;
-        assert wo_seg_n = "0100000" report "error on x6" severity failure;
+        assert wo_seg_n = "1111101" report "error on x6" severity failure;
         
         wi_Hex  <= x"7"; wait for 10 ns;
-        assert wo_seg_n = "0001111" report "error on x7" severity failure;
+        assert wo_seg_n = "0000111" report "error on x7" severity failure;
         
         wi_Hex  <= x"8"; wait for 10 ns;
         assert wo_seg_n = "1111111" report "error on x8" severity failure;
         
         wi_Hex  <= x"9"; wait for 10 ns;
-        assert wo_seg_n = "0000100" report "error on x9" severity failure;
+        assert wo_seg_n = "1101111" report "error on x9" severity failure;
         
         wi_Hex  <= x"A"; wait for 10 ns;
-        assert wo_seg_n = "0001000" report "error on xA" severity failure;
+        assert wo_seg_n = "1110111" report "error on xA" severity failure;
         
         wi_Hex  <= x"B"; wait for 10 ns;
-        assert wo_seg_n = "1100000" report "error on xB" severity failure;
+        assert wo_seg_n = "1111100" report "error on xB" severity failure;
         
         wi_Hex  <= x"C"; wait for 10 ns;
-        assert wo_seg_n = "0110001" report "error on xC" severity failure;
+        assert wo_seg_n = "0111001" report "error on xC" severity failure;
         
         wi_Hex  <= x"D"; wait for 10 ns;
-        assert wo_seg_n = "1000010" report "error on xD" severity failure;
+        assert wo_seg_n = "1011110" report "error on xD" severity failure;
         
         wi_Hex  <= x"E"; wait for 10 ns;
-        assert wo_seg_n = "0110000" report "error on xE" severity failure;
+        assert wo_seg_n = "1111001" report "error on xE" severity failure;
         
         wi_Hex  <= x"F"; wait for 10 ns;
-        assert wo_seg_n = "0111000" report "error on xF" severity failure;
+        assert wo_seg_n = "1110001" report "error on xF" severity failure;
         
         wait;
     end process;
