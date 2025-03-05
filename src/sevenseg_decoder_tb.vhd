@@ -110,10 +110,10 @@ sevenseg_decoder_inst : sevenseg_decoder port map (
         assert wo_seg_n = "1011110" report "error on xD" severity failure;
         
         wi_Hex  <= x"E"; wait for 10 ns;
-        assert wo_seg_n = "1111001" report "error on xE" severity failure;
+        assert wo_seg_n = "1001111" report "error on xE" severity failure;
         
         wi_Hex  <= x"F"; wait for 10 ns;
-        assert wo_seg_n = "1110001" report "error on xF" severity failure;
+        assert wo_seg_n = "0111000" report "error on xF" severity failure;
         
         wait;
     end process;
