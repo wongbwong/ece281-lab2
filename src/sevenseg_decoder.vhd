@@ -30,7 +30,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- any Xilinx leaf cells in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
-
+--asda--
 entity sevenseg_decoder is
     Port ( 
     i_Hex : in std_logic_vector (3 downto 0);

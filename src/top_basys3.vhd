@@ -108,7 +108,7 @@ begin
         o_seg_n(1) => w_seg_n(1),
         o_seg_n(0) => w_seg_n(0)
     );	
-	
+	--342--
 	-- CONCURRENT STATEMENTS ----------------------------
 	
 	-- wire up active-low 7SD anode (active low) to button (active-high)
@@ -119,6 +119,7 @@ begin
     an(2) <= '1';
     an(3) <= '1';
 	-- other 7SD are kept off
+	seg <= w_seg_n;
 	-----------------------------------------------------
 	
 end top_basys3_arch;
